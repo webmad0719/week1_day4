@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Js Intro</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        /*
+
+        function estimatePrice(cost, action) {
+            let profit = 50
+            let subtotal = cost + profit
+            action(subtotal)
+        }
+
+        function applyNormalVAT(subtotal) {
+            console.log(subtotal * 1.21)
+        }
+
+        function applyReducedVAT(subtotal) {
+            console.log(subtotal * 1.1)
+        }
+
+        function noVATApplied(subtotal) {
+            console.log(subtotal)
+        }
+
+        estimatePrice(100, applyNormalVAT)
+        estimatePrice(245, applyReducedVAT)
+        estimatePrice(87, applyReducedVAT)
+        estimatePrice(6, noVATApplied)
+
+
+
+
+
+
+
+
+
+        // return - example 1
+        function greetText(name, surname) {
+            return '¡Buenos días, ' + name + ' ' + surname + '!'
+        }
+
+        const result1 = greetText('María', 'Álvarez')
+        const result2 = greetText('Esteban', 'Gómez')
+        console.log(result1, result2)
+
+
+
+
+
+
+        // return value - example 2
+        function isEven(val) {
+            if (val % 2 === 0) {
+                return true;                // no es necesario ... else { return false }, las funciones carentes de retorno retornan undefined
+            }
+        }
+
+        const result1 = isEven(20);
+        const result2 = isEven(35);
+
+        if (result1) { console.log('20 es par') }
+        else { console.log('20 es impar') }
+        if (result2) { console.log('35 es par') }
+        else { console.log('35 es impar') }
+
+
+
+
+
+
+
+
+        // return value - example 3 (function execution aborted)
+        function searchWord(val) {
+            for (let i = 0; i < 1000; i++) {
+                console.log('Iteración número ' + i);
+                if (i === 48) {
+                    return		// el retorno de una función supone detener su ejecución
+                }
+            }
+        }
+        searchWord('Qwerty');
+
+
+
+
+
+
+
+
+        // Array .forEach() method
+        const arrayNames = ["Pedro", "Jake", "Joan"];
+        arrayNames.forEach(name => console.log(name))
+
+
+
+
+
+
+        // Split string method
+        var phrase = "This is long enough for a string to count it words";
+        var words = phrase.split(" ");
+        console.log(words);
+
+
+
+    </script>
+</body>
+
+</html>
